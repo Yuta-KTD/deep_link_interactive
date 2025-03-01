@@ -27,7 +27,9 @@
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:scheme="deepLinkMain"/>
+                <data 
+                    android:scheme="deepLinkMainScheme"
+                    android:host="deepLinkMainHost"/>
             </intent-filter>
         </activity>
         <!-- Don't delete the meta-data below.
