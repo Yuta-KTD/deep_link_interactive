@@ -61,7 +61,9 @@ class _HomePageState extends State<HomePage> {
   }
 
   Future<void> _launchURLScheme() async {
-    final Uri url = Uri.parse('deepLinkSubScheme://fetchid');
+    final Uri url = Uri.parse(Platform.isIOS
+        ? 'deepLinkSubScheme://fetchid'
+        : 'deeplinksubscheme://fetchid');
 
     try {
       await launchUrl(url);

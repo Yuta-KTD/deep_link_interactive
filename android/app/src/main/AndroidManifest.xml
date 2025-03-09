@@ -15,7 +15,7 @@
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:scheme="deepLinkMainScheme"
+                <data android:scheme="deeplinkmainscheme"
                     android:host="open"/>
             </intent-filter>
             <!-- Specifies an Android theme to apply to this Activity as soon as
