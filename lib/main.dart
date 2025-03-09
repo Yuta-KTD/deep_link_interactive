@@ -61,9 +61,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   Future<void> _launchURLScheme() async {
-    final Uri url = Uri.parse(Platform.isIOS
-        ? 'deepLinkSubScheme://fetch'
-        : 'deepLinkSubScheme://fetchid');
+    final Uri url = Uri.parse('deepLinkSubScheme://fetchid');
 
     try {
       await launchUrl(url);
@@ -78,7 +76,8 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('受信したIDの表示'),
+        centerTitle: true,
+        title: const Text('アプリA'),
       ),
       body: Center(
         child: Column(
